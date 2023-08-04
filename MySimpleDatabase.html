@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Database</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <div id="enterDetails">
+        <h1>Enter Details</h1>
+        <h4>ID</h4>
+        <input id="enterID" type="text">
+        
+        <h4>Name</h4>
+        <input id="enterName" type="text">
+
+        <h4>Age</h4>
+        <input id="enterAge" type="number"> <br><br><br>
+
+        <button id="insert">INSERT</button>
+        <button id="update">UPDATE</button>
+        <button id="remove">REMOVE</button> <br><br>
+
+
+
+    </div>
+
+    <div id="findDetails">
+        <h1>Find by ID</h1>
+        <h4>ID</h4>
+        <input id="findID" type="text"> <br><br>
+        <button id="find">FIND</button>
+
+        <h3 id="findName" type="text"></h3>
+        <h3 id="findAge" type="number"></h3>
+
+       
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyB9awtOtu5jGH_QwCVcEwcPNsXzHWLWePg",
+          authDomain: "simplecrud-61ebe.firebaseapp.com",
+          databaseURL: "https://simplecrud-61ebe-default-rtdb.europe-west1.firebasedatabase.app",
+          projectId: "simplecrud-61ebe",
+          storageBucket: "simplecrud-61ebe.appspot.com",
+          messagingSenderId: "345465113148",
+          appId: "1:345465113148:web:2515f3badd1f9bcb695139"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+      <script src="script.js" type="module"></script>
+</body>
+</html>

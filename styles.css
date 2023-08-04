@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+#enterDetails {
+    float: left; width: 50%; background-color: darkslategrey; color:floralwhite;
+}
+#findDetails {
+    float: left; width: 50%; background-color:floralwhite;  color: darkslategrey
+}
+
+input {
+    width: 120px;
+}
